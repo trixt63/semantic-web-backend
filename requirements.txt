@@ -1,0 +1,10 @@
+sparqlwrapper==2.0.0
+python-dotenv==0.21.0
+termcolor==2.2.0
+sanic==22.12.0
+Sanic-Cors==2.2.0
+sanic-ext==22.12.0
+sanic-routing==22.8.0
+sanic-testing==23.3.0
+PyJWT==2.6.0
+jsonschema==3.2.0
