@@ -1,0 +1,177 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ex: <http://example.org/ontology#> .
+
+
+# Lessons for ITC001
+ex:Lesson1_ITC001 rdf:type ex:Lesson ;
+    ex:lessonId "L001_ITC001" ;
+    ex:lessonName "Introduction to Programming Concepts" ;
+    ex:chapter 1 ;
+    ex:lessonDescription "Overview of basic programming concepts." ;
+    ex:belongToCourse ex:ITCourse1 .
+
+ex:Lesson2_ITC001 rdf:type ex:Lesson ;
+    ex:lessonId "L002_ITC001" ;
+    ex:lessonName "Variables and Data Types" ;
+    ex:chapter 2 ;
+    ex:lessonDescription "Understanding variables and data types in programming." ;
+    ex:belongToCourse ex:ITCourse1 .
+
+ex:Lesson3_ITC001 rdf:type ex:Lesson ;
+    ex:lessonId "L003_ITC001" ;
+    ex:lessonName "Control Structures" ;
+    ex:chapter 3 ;
+    ex:lessonDescription "Understanding control structures in programming." ;
+    ex:belongToCourse ex:ITCourse1 .
+
+ex:Lesson4_ITC001 rdf:type ex:Lesson ;
+    ex:lessonId "L004_ITC001" ;
+    ex:lessonName "Functions and Procedures" ;
+    ex:chapter 4 ;
+    ex:lessonDescription "Introduction to functions and procedures in programming." ;
+    ex:belongToCourse ex:ITCourse1 .
+
+ex:Lesson5_ITC001 rdf:type ex:Lesson ;
+    ex:lessonId "L005_ITC001" ;
+    ex:lessonName "Arrays and Data Structures" ;
+    ex:chapter 5 ;
+    ex:lessonDescription "Exploring arrays and basic data structures." ;
+    ex:belongToCourse ex:ITCourse1 .
+
+ex:Lesson6_ITC001 rdf:type ex:Lesson ;
+    ex:lessonId "L006_ITC001" ;
+    ex:lessonName "Object-Oriented Programming" ;
+    ex:chapter 6 ;
+    ex:lessonDescription "Introduction to object-oriented programming concepts." ;
+    ex:belongToCourse ex:ITCourse1 .
+
+ex:Lesson7_ITC001 rdf:type ex:Lesson ;
+    ex:lessonId "L007_ITC001" ;
+    ex:lessonName "Error Handling" ;
+    ex:chapter 7 ;
+    ex:lessonDescription "Dealing with errors and exception handling." ;
+    ex:belongToCourse ex:ITCourse1 .
+
+ex:Lesson8_ITC001 rdf:type ex:Lesson ;
+    ex:lessonId "L008_ITC001" ;
+    ex:lessonName "Project Work" ;
+    ex:chapter 8 ;
+    ex:lessonDescription "Application of learned concepts in a programming project." ;
+    ex:belongToCourse ex:ITCourse1 .
+	
+# Lessons for ITC002
+ex:Lesson1_ITC002 rdf:type ex:Lesson ;
+    ex:lessonId "L001_ITC002" ;
+    ex:lessonName "Introduction to Database Concepts" ;
+    ex:chapter 1 ;
+    ex:lessonDescription "Fundamental concepts in database management." ;
+    ex:belongToCourse ex:ITCourse2 .
+
+ex:Lesson2_ITC002 rdf:type ex:Lesson ;
+    ex:lessonId "L002_ITC002" ;
+    ex:lessonName "Relational Database Design" ;
+    ex:chapter 2 ;
+    ex:lessonDescription "Principles of designing relational databases." ;
+    ex:belongToCourse ex:ITCourse2 .
+
+ex:Lesson3_ITC002 rdf:type ex:Lesson ;
+    ex:lessonId "L003_ITC002" ;
+    ex:lessonName "Normalization in Databases" ;
+    ex:chapter 3 ;
+    ex:lessonDescription "Understanding normalization principles in database design." ;
+    ex:belongToCourse ex:ITCourse2 .
+
+ex:Lesson4_ITC002 rdf:type ex:Lesson ;
+    ex:lessonId "L004_ITC002" ;
+    ex:lessonName "SQL Programming" ;
+    ex:chapter 4 ;
+    ex:lessonDescription "Introduction to SQL programming language." ;
+    ex:belongToCourse ex:ITCourse2 .
+
+ex:Lesson5_ITC002 rdf:type ex:Lesson ;
+    ex:lessonId "L005_ITC002" ;
+    ex:lessonName "Database Security" ;
+    ex:chapter 5 ;
+    ex:lessonDescription "Principles and practices of securing databases." ;
+    ex:belongToCourse ex:ITCourse2 .
+
+ex:Lesson6_ITC002 rdf:type ex:Lesson ;
+    ex:lessonId "L006_ITC002" ;
+    ex:lessonName "NoSQL Databases" ;
+    ex:chapter 6 ;
+    ex:lessonDescription "Introduction to NoSQL databases." ;
+    ex:belongToCourse ex:ITCourse2 .
+
+ex:Lesson7_ITC002 rdf:type ex:Lesson ;
+    ex:lessonId "L007_ITC002" ;
+    ex:lessonName "Database Administration" ;
+    ex:chapter 7 ;
+    ex:lessonDescription "Practices of database administration." ;
+    ex:belongToCourse ex:ITCourse2 .
+
+ex:Lesson8_ITC002 rdf:type ex:Lesson ;
+    ex:lessonId "L008_ITC002" ;
+    ex:lessonName "Project: Database Design" ;
+    ex:chapter 8 ;
+    ex:lessonDescription "Database design project work." ;
+    ex:belongToCourse ex:ITCourse2 .
+
+# Lessons for ITC003
+ex:Lesson1_ITC003 rdf:type ex:Lesson ;
+    ex:lessonId "L001_ITC003" ;
+    ex:lessonName "Introduction to Cybersecurity" ;
+    ex:chapter 1 ;
+    ex:lessonDescription "Overview of fundamental concepts in cybersecurity." ;
+    ex:belongToCourse ex:ITCourse3 .
+
+ex:Lesson2_ITC003 rdf:type ex:Lesson ;
+    ex:lessonId "L002_ITC003" ;
+    ex:lessonName "Network Security Basics" ;
+    ex:chapter 2 ;
+    ex:lessonDescription "Fundamental principles of network security." ;
+    ex:belongToCourse ex:ITCourse3 .
+
+ex:Lesson3_ITC003 rdf:type ex:Lesson ;
+    ex:lessonId "L003_ITC003" ;
+    ex:lessonName "Network Security Protocols" ;
+    ex:chapter 3 ;
+    ex:lessonDescription "Exploring network security protocols." ;
+    ex:belongToCourse ex:ITCourse3 .
+
+ex:Lesson4_ITC003 rdf:type ex:Lesson ;
+    ex:lessonId "L004_ITC003" ;
+    ex:lessonName "Cryptography Basics" ;
+    ex:chapter 4 ;
+    ex:lessonDescription "Introduction to cryptographic principles." ;
+    ex:belongToCourse ex:ITCourse3 .
+
+ex:Lesson5_ITC003 rdf:type ex:Lesson ;
+    ex:lessonId "L005_ITC003" ;
+    ex:lessonName "Incident Response" ;
+    ex:chapter 5 ;
+    ex:lessonDescription "Incident response strategies in cybersecurity." ;
+    ex:belongToCourse ex:ITCourse3 .
+
+ex:Lesson6_ITC003 rdf:type ex:Lesson ;
+    ex:lessonId "L006_ITC003" ;
+    ex:lessonName "Ethical Hacking" ;
+    ex:chapter 6 ;
+    ex:lessonDescription "Introduction to ethical hacking." ;
+    ex:belongToCourse ex:ITCourse3 .
+
+ex:Lesson7_ITC003 rdf:type ex:Lesson ;
+    ex:lessonId "L007_ITC003" ;
+    ex:lessonName "Security Policies and Compliance" ;
+    ex:chapter 7 ;
+    ex:lessonDescription "Understanding security policies and compliance." ;
+    ex:belongToCourse ex:ITCourse3 .
+
+ex:Lesson8_ITC003 rdf:type ex:Lesson ;
+    ex:lessonId "L008_ITC003" ;
+    ex:lessonName "Final Project: Cybersecurity" ;
+    ex:chapter 8 ;
+    ex:lessonDescription "Final project in the field of cybersecurity." ;
+    ex:belongToCourse ex:ITCourse3 .
