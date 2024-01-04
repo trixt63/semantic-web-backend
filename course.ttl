@@ -1,0 +1,30 @@
+# Exam, MiniExam, FinalExam, Question
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ex: <http://example.org/ontology#> .
+
+# Sample IT Course 1
+ex:ITCourse1 rdf:type ex:Course ;
+    ex:courseId "ITC001" ;
+    ex:courseName "Introduction to Programming" ;
+    ex:courseDescription "A foundational course introducing programming concepts and logic." ;
+    ex:duration 10 ;
+    ex:gender "Mixed" .
+
+# Sample IT Course 2
+ex:ITCourse2 rdf:type ex:Course ;
+    ex:courseId "ITC002" ;
+    ex:courseName "Database Management Systems" ;
+    ex:courseDescription "Explore the principles and practices of managing databases." ;
+    ex:duration 12 ;
+    ex:gender "Mixed" .
+
+# Sample IT Course 3
+ex:ITCourse3 rdf:type ex:Course ;
+    ex:courseId "ITC003" ;
+    ex:courseName "Cybersecurity Fundamentals" ;
+    ex:courseDescription "An introductory course covering the basics of cybersecurity." ;
+    ex:duration 8 ;
+    ex:gender "Mixed" .

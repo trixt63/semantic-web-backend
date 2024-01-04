@@ -1,0 +1,185 @@
+# Exam, MiniExam, FinalExam, Question
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ex: <http://example.org/ontology#> .
+
+# MiniExams for Lesson1_ITC001
+ex:MiniExam1_Lesson1_ITC001 rdf:type ex:MiniExam ;
+    ex:examId "ME1_L1_ITC001" ;
+    ex:examName "Mini Exam 1 - Lesson 1 - ITC001" ;
+    ex:maxpoint 50 ;
+    ex:timeLimit 60 ;
+    ex:containExam ex:Lesson1_ITC001 .
+
+# MiniExams for Lesson2_ITC001
+ex:MiniExam2_Lesson2_ITC001 rdf:type ex:MiniExam ;
+    ex:examId "ME2_L2_ITC001" ;
+    ex:examName "Mini Exam 2 - Lesson 2 - ITC001" ;
+    ex:maxpoint 45 ;
+    ex:timeLimit 55 ;
+    ex:containExam ex:Lesson2_ITC001 .
+
+# MiniExams for Lesson3_ITC001
+ex:MiniExam3_Lesson3_ITC001 rdf:type ex:MiniExam ;
+    ex:examId "ME3_L3_ITC001" ;
+    ex:examName "Mini Exam 3 - Lesson 3 - ITC001" ;
+    ex:maxpoint 48 ;
+    ex:timeLimit 58 ;
+    ex:containExam ex:Lesson3_ITC001 .
+
+# MiniExams for Lesson4_ITC001
+ex:MiniExam4_Lesson4_ITC001 rdf:type ex:MiniExam ;
+    ex:examId "ME4_L4_ITC001" ;
+    ex:examName "Mini Exam 4 - Lesson 4 - ITC001" ;
+    ex:maxpoint 42 ;
+    ex:timeLimit 50 ;
+    ex:containExam ex:Lesson4_ITC001 .
+
+# MiniExams for Lesson5_ITC001
+ex:MiniExam5_Lesson5_ITC001 rdf:type ex:MiniExam ;
+    ex:examId "ME5_L5_ITC001" ;
+    ex:examName "Mini Exam 5 - Lesson 5 - ITC001" ;
+    ex:maxpoint 48 ;
+    ex:timeLimit 55 ;
+    ex:containExam ex:Lesson5_ITC001 .
+
+# MiniExams for Lesson6_ITC001
+ex:MiniExam6_Lesson6_ITC001 rdf:type ex:MiniExam ;
+    ex:examId "ME6_L6_ITC001" ;
+    ex:examName "Mini Exam 6 - Lesson 6 - ITC001" ;
+    ex:maxpoint 46 ;
+    ex:timeLimit 53 ;
+    ex:containExam ex:Lesson6_ITC001 .
+
+# MiniExams for Lesson7_ITC001
+ex:MiniExam7_Lesson7_ITC001 rdf:type ex:MiniExam ;
+    ex:examId "ME7_L7_ITC001" ;
+    ex:examName "Mini Exam 7 - Lesson 7 - ITC001" ;
+    ex:maxpoint 44 ;
+    ex:timeLimit 52 ;
+    ex:containExam ex:Lesson7_ITC001 .
+
+# MiniExams for Lesson8_ITC001
+ex:MiniExam8_Lesson8_ITC001 rdf:type ex:MiniExam ;
+    ex:examId "ME8_L8_ITC001" ;
+    ex:examName "Mini Exam 8 - Lesson 8 - ITC001" ;
+    ex:maxpoint 49 ;
+    ex:timeLimit 57 ;
+    ex:containExam ex:Lesson8_ITC001 .
+
+# MiniExams for ITC002
+ex:MiniExam1_Lesson1_ITC002 rdf:type ex:MiniExam ;
+    ex:examId "ME1_L1_ITC002" ;
+    ex:examName "Mini Exam 1 - Lesson 1 - ITC002" ;
+    ex:maxpoint 55 ;
+    ex:timeLimit 65 ;
+    ex:containExam ex:Lesson1_ITC002 .
+
+ex:MiniExam2_Lesson2_ITC002 rdf:type ex:MiniExam ;
+    ex:examId "ME2_L2_ITC002" ;
+    ex:examName "Mini Exam 2 - Lesson 2 - ITC002" ;
+    ex:maxpoint 50 ;
+    ex:timeLimit 60 ;
+    ex:containExam ex:Lesson2_ITC002 .
+
+ex:MiniExam3_Lesson3_ITC002 rdf:type ex:MiniExam ;
+    ex:examId "ME3_L3_ITC002" ;
+    ex:examName "Mini Exam 3 - Lesson 3 - ITC002" ;
+    ex:maxpoint 48 ;
+    ex:timeLimit 58 ;
+    ex:containExam ex:Lesson3_ITC002 .
+
+ex:MiniExam4_Lesson4_ITC002 rdf:type ex:MiniExam ;
+    ex:examId "ME4_L4_ITC002" ;
+    ex:examName "Mini Exam 4 - Lesson 4 - ITC002" ;
+    ex:maxpoint 52 ;
+    ex:timeLimit 55 ;
+    ex:containExam ex:Lesson4_ITC002 .
+
+ex:MiniExam5_Lesson5_ITC002 rdf:type ex:MiniExam ;
+    ex:examId "ME5_L5_ITC002" ;
+    ex:examName "Mini Exam 5 - Lesson 5 - ITC002" ;
+    ex:maxpoint 47 ;
+    ex:timeLimit 63 ;
+    ex:containExam ex:Lesson5_ITC002 .
+
+ex:MiniExam6_Lesson6_ITC002 rdf:type ex:MiniExam ;
+    ex:examId "ME6_L6_ITC002" ;
+    ex:examName "Mini Exam 6 - Lesson 6 - ITC002" ;
+    ex:maxpoint 53 ;
+    ex:timeLimit 58 ;
+    ex:containExam ex:Lesson6_ITC002 .
+
+ex:MiniExam7_Lesson7_ITC002 rdf:type ex:MiniExam ;
+    ex:examId "ME7_L7_ITC002" ;
+    ex:examName "Mini Exam 7 - Lesson 7 - ITC002" ;
+    ex:maxpoint 49 ;
+    ex:timeLimit 62 ;
+    ex:containExam ex:Lesson7_ITC002 .
+
+ex:MiniExam8_Lesson8_ITC002 rdf:type ex:MiniExam ;
+    ex:examId "ME8_L8_ITC002" ;
+    ex:examName "Mini Exam 8 - Lesson 8 - ITC002" ;
+    ex:maxpoint 54 ;
+    ex:timeLimit 57 ;
+    ex:containExam ex:Lesson8_ITC002 .
+	
+# MiniExams for ITC003
+ex:MiniExam1_Lesson1_ITC003 rdf:type ex:MiniExam ;
+    ex:examId "ME1_L1_ITC003" ;
+    ex:examName "Mini Exam 1 - Lesson 1 - ITC003" ;
+    ex:maxpoint 60 ;
+    ex:timeLimit 70 ;
+    ex:containExam ex:Lesson1_ITC003 .
+
+ex:MiniExam2_Lesson2_ITC003 rdf:type ex:MiniExam ;
+    ex:examId "ME2_L2_ITC003" ;
+    ex:examName "Mini Exam 2 - Lesson 2 - ITC003" ;
+    ex:maxpoint 55 ;
+    ex:timeLimit 65 ;
+    ex:containExam ex:Lesson2_ITC003 .
+
+ex:MiniExam3_Lesson3_ITC003 rdf:type ex:MiniExam ;
+    ex:examId "ME3_L3_ITC003" ;
+    ex:examName "Mini Exam 3 - Lesson 3 - ITC003" ;
+    ex:maxpoint 58 ;
+    ex:timeLimit 68 ;
+    ex:containExam ex:Lesson3_ITC003 .
+
+ex:MiniExam4_Lesson4_ITC003 rdf:type ex:MiniExam ;
+    ex:examId "ME4_L4_ITC003" ;
+    ex:examName "Mini Exam 4 - Lesson 4 - ITC003" ;
+    ex:maxpoint 52 ;
+    ex:timeLimit 62 ;
+    ex:containExam ex:Lesson4_ITC003 .
+
+ex:MiniExam5_Lesson5_ITC003 rdf:type ex:MiniExam ;
+    ex:examId "ME5_L5_ITC003" ;
+    ex:examName "Mini Exam 5 - Lesson 5 - ITC003" ;
+    ex:maxpoint 67 ;
+    ex:timeLimit 75 ;
+    ex:containExam ex:Lesson5_ITC003 .
+
+ex:MiniExam6_Lesson6_ITC003 rdf:type ex:MiniExam ;
+    ex:examId "ME6_L6_ITC003" ;
+    ex:examName "Mini Exam 6 - Lesson 6 - ITC003" ;
+    ex:maxpoint 63 ;
+    ex:timeLimit 70 ;
+    ex:containExam ex:Lesson6_ITC003 .
+
+ex:MiniExam7_Lesson7_ITC003 rdf:type ex:MiniExam ;
+    ex:examId "ME7_L7_ITC003" ;
+    ex:examName "Mini Exam 7 - Lesson 7 - ITC003" ;
+    ex:maxpoint 69 ;
+    ex:timeLimit 72 ;
+    ex:containExam ex:Lesson7_ITC003 .
+
+ex:MiniExam8_Lesson8_ITC003 rdf:type ex:MiniExam ;
+    ex:examId "ME8_L8_ITC003" ;
+    ex:examName "Mini Exam 8 - Lesson 8 - ITC003" ;
+    ex:maxpoint 64 ;
+    ex:timeLimit 68 ;
+    ex:containExam ex:Lesson8_ITC003 .
+

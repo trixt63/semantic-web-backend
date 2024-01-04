@@ -1,0 +1,30 @@
+# Exam, MiniExam, FinalExam, Question
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ex: <http://example.org/ontology#> .
+
+# FinalExams for ITC001
+ex:FinalExam_ITC001 rdf:type ex:FinalExam ;
+    ex:examId "FE_ITC001" ;
+    ex:examName "Final Exam - ITC001" ;
+    ex:maxpoint 100 ;
+    ex:timeLimit 120 ;
+    ex:containExam ex:ITCourse1 .
+
+# FinalExams for ITC002
+ex:FinalExam_ITC002 rdf:type ex:FinalExam ;
+    ex:examId "FE_ITC002" ;
+    ex:examName "Final Exam - ITC002" ;
+    ex:maxpoint 90 ;
+    ex:timeLimit 100 ;
+    ex:containExam ex:ITCourse2 .
+
+# FinalExams for ITC003
+ex:FinalExam_ITC003 rdf:type ex:FinalExam ;
+    ex:examId "FE_ITC003" ;
+    ex:examName "Final Exam - ITC003" ;
+    ex:maxpoint 95 ;
+    ex:timeLimit 110 ;
+    ex:containExam ex:ITCourse3 .

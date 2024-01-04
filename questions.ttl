@@ -1,0 +1,88 @@
+# Exam, MiniExam, FinalExam, Question
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ex: <http://example.org/ontology#> .
+
+# Questions related to IT Courses
+ex:Question1_ITC rdf:type ex:Question ;
+    ex:questionId "Q1_ITC" ;
+    ex:questionName "What is the importance of data encryption in cybersecurity?" ;
+    ex:type "IT" ;
+    ex:point 15.0 ;
+    ex:correctAnswer "To protect sensitive information from unauthorized access" ;
+    ex:listAnswer "To protect sensitive information from unauthorized access, To improve internet speed, To create backups, To optimize code execution" ;
+    ex:gender "Neutral" .
+
+ex:Question2_ITC rdf:type ex:Question ;
+    ex:questionId "Q2_ITC" ;
+    ex:questionName "Explain the concept of object-oriented programming (OOP)." ;
+    ex:type "IT" ;
+    ex:point 18.0 ;
+    ex:correctAnswer "A programming paradigm based on objects and classes for code organization and reuse" ;
+    ex:listAnswer "A programming paradigm based on objects and classes for code organization and reuse, A mathematical approach to problem-solving, A system for network communication, A method for data compression" ;
+    ex:gender "Neutral" .
+
+ex:Question3_ITC rdf:type ex:Question ;
+    ex:questionId "Q3_ITC" ;
+    ex:questionName "What is the role of a database management system (DBMS) in software development?" ;
+    ex:type "IT" ;
+    ex:point 12.0 ;
+    ex:correctAnswer "To efficiently organize and manage data for applications" ;
+    ex:listAnswer "To efficiently organize and manage data for applications, To design user interfaces, To secure network connections, To execute algorithms" ;
+    ex:gender "Neutral" .
+
+ex:Question4_ITC rdf:type ex:Question ;
+    ex:questionId "Q4_ITC" ;
+    ex:questionName "Define the term 'algorithm' in the context of computer science." ;
+    ex:type "IT" ;
+    ex:point 10.0 ;
+    ex:correctAnswer "A step-by-step procedure or formula for solving a problem" ;
+    ex:listAnswer "A step-by-step procedure or formula for solving a problem, A type of computer virus, A hardware component, A programming language" ;
+    ex:gender "Neutral" .
+
+ex:Question5_ITC rdf:type ex:Question ;
+    ex:questionId "Q5_ITC" ;
+    ex:questionName "Why is version control essential in collaborative software development?" ;
+    ex:type "IT" ;
+    ex:point 14.0 ;
+    ex:correctAnswer "To track changes, coordinate work, and prevent conflicts" ;
+    ex:listAnswer "To track changes, coordinate work, and prevent conflicts, To improve graphic design, To manage hardware resources, To enhance software performance" ;
+    ex:gender "Neutral" .
+
+ex:Question6_ITC rdf:type ex:Question ;
+    ex:questionId "Q6_ITC" ;
+    ex:questionName "What is the significance of the OSI model in networking?" ;
+    ex:type "IT" ;
+    ex:point 16.0 ;
+    ex:correctAnswer "To standardize network communication and troubleshoot connectivity issues" ;
+    ex:listAnswer "To standardize network communication and troubleshoot connectivity issues, To design graphic user interfaces, To manage server configurations, To optimize database queries" ;
+    ex:gender "Neutral" .
+
+ex:Question7_ITC rdf:type ex:Question ;
+    ex:questionId "Q7_ITC" ;
+    ex:questionName "Explain the concept of 'cloud computing' and its benefits." ;
+    ex:type "IT" ;
+    ex:point 20.0 ;
+    ex:correctAnswer "A technology that provides on-demand access to computing resources over the internet" ;
+    ex:listAnswer "A technology that provides on-demand access to computing resources over the internet, A form of data storage, A type of programming language, A method for data compression" ;
+    ex:gender "Neutral" .
+
+ex:Question8_ITC rdf:type ex:Question ;
+    ex:questionId "Q8_ITC" ;
+    ex:questionName "What is the role of a front-end developer in web development?" ;
+    ex:type "IT" ;
+    ex:point 12.0 ;
+    ex:correctAnswer "To create and implement the visual elements of a website" ;
+    ex:listAnswer "To create and implement the visual elements of a website, To manage server configurations, To optimize database queries, To enhance software security" ;
+    ex:gender "Neutral" .
+
+ex:Question9_ITC rdf:type ex:Question ;
+    ex:questionId "Q9_ITC" ;
+    ex:questionName "How does machine learning contribute to data analysis?" ;
+    ex:type "IT" ;
+    ex:point 18.0 ;
+    ex:correctAnswer "By enabling systems to learn patterns and make predictions from data" ;
+    ex:listAnswer "By enabling systems to learn patterns and make predictions from data, By optimizing code execution, By managing network configurations, By improving hardware performance" ;
+    ex:gender "Neutral" .

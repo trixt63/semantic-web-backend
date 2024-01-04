@@ -1,0 +1,140 @@
+# Exam, MiniExam, FinalExam, Question
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ex: <http://example.org/ontology#> .
+
+# Relationships between Students and MiniExams - FinalExams in ITC001
+ex:Student1_TakeMiniExam1_ITC001 rdf:type ex:takeExam ;
+    ex:studentId "Student1" ;
+    ex:examId "ME1_L1_ITC001" ;
+    ex:mark 18.0 .
+
+ex:Student2_TakeMiniExam1_ITC001 rdf:type ex:takeExam ;
+    ex:studentId "Student2" ;
+    ex:examId "ME1_L1_ITC001" ;
+    ex:mark 16.5 .
+
+ex:Student3_TakeMiniExam2_ITC001 rdf:type ex:takeExam ;
+    ex:studentId "Student3" ;
+    ex:examId "ME2_L2_ITC001" ;
+    ex:mark 20.0 .
+
+ex:Student4_TakeMiniExam2_ITC001 rdf:type ex:takeExam ;
+    ex:studentId "Student4" ;
+    ex:examId "ME2_L2_ITC001" ;
+    ex:mark 15.8 .
+
+ex:Student5_TakeFinalExam_ITC001 rdf:type ex:takeExam ;
+    ex:studentId "Student5" ;
+    ex:examId "FE_ITC001" ;
+    ex:mark 88.2 .
+
+ex:Student6_TakeFinalExam_ITC001 rdf:type ex:takeExam ;
+    ex:studentId "Student6" ;
+    ex:examId "FE_ITC001" ;
+    ex:mark 78.0 .
+
+ex:Student7_TakeFinalExam_ITC001 rdf:type ex:takeExam ;
+    ex:studentId "Student7" ;
+    ex:examId "FE_ITC001" ;
+    ex:mark 95.0 .
+
+ex:Student8_TakeFinalExam_ITC001 rdf:type ex:takeExam ;
+    ex:studentId "Student8" ;
+    ex:examId "FE_ITC001" ;
+    ex:mark 90.5 .
+
+ex:Student9_TakeFinalExam_ITC001 rdf:type ex:takeExam ;
+    ex:studentId "Student9" ;
+    ex:examId "FE_ITC001" ;
+    ex:mark 85.0 .
+	
+# Relationships between Students and MiniExams in ITC002
+ex:Student1_TakeMiniExam1_ITC002 rdf:type ex:takeExam ;
+    ex:studentId "Student1" ;
+    ex:examId "ME1_L1_ITC002" ;
+    ex:mark 22.5 .
+
+ex:Student2_TakeMiniExam1_ITC002 rdf:type ex:takeExam ;
+    ex:studentId "Student2" ;
+    ex:examId "ME1_L1_ITC002" ;
+    ex:mark 18.0 .
+
+ex:Student3_TakeMiniExam2_ITC002 rdf:type ex:takeExam ;
+    ex:studentId "Student3" ;
+    ex:examId "ME2_L2_ITC002" ;
+    ex:mark 21.0 .
+
+ex:Student4_TakeMiniExam2_ITC002 rdf:type ex:takeExam ;
+    ex:studentId "Student4" ;
+    ex:examId "ME2_L2_ITC002" ;
+    ex:mark 19.8 .
+
+ex:Student5_TakeFinalExam_ITC002 rdf:type ex:takeExam ;
+    ex:studentId "Student5" ;
+    ex:examId "FE_ITC002" ;
+    ex:mark 88.2 .
+
+ex:Student6_TakeFinalExam_ITC002 rdf:type ex:takeExam ;
+    ex:studentId "Student6" ;
+    ex:examId "FE_ITC002" ;
+    ex:mark 79.5 .
+
+ex:Student7_TakeFinalExam_ITC002 rdf:type ex:takeExam ;
+    ex:studentId "Student7" ;
+    ex:examId "FE_ITC002" ;
+    ex:mark 91.0 .
+
+ex:Student8_TakeFinalExam_ITC002 rdf:type ex:takeExam ;
+    ex:studentId "Student8" ;
+    ex:examId "FE_ITC002" ;
+    ex:mark 84.0 .
+
+ex:Student9_TakeFinalExam_ITC002 rdf:type ex:takeExam ;
+    ex:studentId "Student9" ;
+    ex:examId "FE_ITC002" ;
+    ex:mark 76.5 .
+
+# Relationships between Students and MiniExams in ITC003
+ex:Student1_TakeMiniExam1_ITC003 rdf:type ex:takeExam ;
+    ex:studentId "Student1" ;
+    ex:examId "ME1_L1_ITC003" ;
+    ex:mark 20.5 .
+
+ex:Student2_TakeMiniExam1_ITC003 rdf:type ex:takeExam ;
+    ex:studentId "Student2" ;
+    ex:examId "ME1_L1_ITC003" ;
+    ex:mark 19.0 .
+
+ex:Student3_TakeMiniExam2_ITC003 rdf:type ex:takeExam ;
+    ex:studentId "Student3" ;
+    ex:examId "ME2_L2_ITC003" ;
+    ex:mark 23.0 .
+
+ex:Student4_TakeMiniExam2_ITC003 rdf:type ex:takeExam ;
+    ex:studentId "Student4" ;
+    ex:examId "ME2_L2_ITC003" ;
+    ex:mark 18.8 .
+
+ex:Student5_TakeFinalExam_ITC003 rdf:type ex:takeExam ;
+    ex:studentId "Student5" ;
+    ex:examId "FE_ITC003" ;
+    ex:mark 90.2 .
+
+ex:Student6_TakeFinalExam_ITC003 rdf:type ex:takeExam ;
+    ex:studentId "Student6" ;
+    ex:examId "FE_ITC003" ;
+    ex:mark 81.5 .
+
+ex:Student7_TakeFinalExam_ITC003 rdf:type ex:takeExam ;
+    ex:studentId "Student7" ;
+    ex:examId "FE_ITC003" ;
+    ex:mark 92.0 .
+
+ex:Student8_TakeFinalExam_ITC003 rdf:type ex:takeExam ;
+    ex:studentId "Student8" ;
+    ex:examId "FE_ITC003" ;
+    ex:mark 85.0 .
+

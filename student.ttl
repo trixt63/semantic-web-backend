@@ -1,0 +1,118 @@
+# Exam, MiniExam, FinalExam, Question
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ex: <http://example.org/ontology#> .
+
+# Sample Vietnamese Students
+ex:Student1 rdf:type ex:Student ;
+    ex:studentId "SV001" ;
+    ex:studentName "Nguyen Van A" ;
+    ex:address "Hanoi, Vietnam" ;
+    ex:email "nguyenvana@example.com" .
+
+ex:Student2 rdf:type ex:Student ;
+    ex:studentId "SV002" ;
+    ex:studentName "Tran Thi B" ;
+    ex:address "Ho Chi Minh City, Vietnam" ;
+    ex:email "tranthib@example.com" .
+
+ex:Student3 rdf:type ex:Student ;
+    ex:studentId "SV003" ;
+    ex:studentName "Le Quang C" ;
+    ex:address "Da Nang, Vietnam" ;
+    ex:email "lequangc@example.com" .
+
+ex:Student4 rdf:type ex:Student ;
+    ex:studentId "SV004" ;
+    ex:studentName "Pham Thanh D" ;
+    ex:address "Can Tho, Vietnam" ;
+    ex:email "phamthanhd@example.com" .
+
+# Enroll students in the course
+ex:Student1 ex:enrollIn ex:ITCourse1 .
+ex:Student2 ex:enrollIn ex:ITCourse1 .
+ex:Student3 ex:enrollIn ex:ITCourse1 .
+ex:Student4 ex:enrollIn ex:ITCourse1 .
+
+ex:Student5 rdf:type ex:Student ;
+    ex:studentId "SV005" ;
+    ex:studentName "Vo Ngoc E" ;
+    ex:address "Vinh, Vietnam" ;
+    ex:email "vongoce@example.com" .
+
+ex:Student6 rdf:type ex:Student ;
+    ex:studentId "SV006" ;
+    ex:studentName "Hoang Thanh F" ;
+    ex:address "Bien Hoa, Vietnam" ;
+    ex:email "hoangthanhf@example.com" .
+
+ex:Student7 rdf:type ex:Student ;
+    ex:studentId "SV007" ;
+    ex:studentName "Do Thi G" ;
+    ex:address "Nha Trang, Vietnam" ;
+    ex:email "dothig@example.com" .
+
+ex:Student8 rdf:type ex:Student ;
+    ex:studentId "SV008" ;
+    ex:studentName "Ngo Van H" ;
+    ex:address "Hue, Vietnam" ;
+    ex:email "ngovanh@example.com" .
+
+ex:Student9 rdf:type ex:Student ;
+    ex:studentId "SV009" ;
+    ex:studentName "Mai Hoai I" ;
+    ex:address "Quang Ngai, Vietnam" ;
+    ex:email "maihoaii@example.com" .
+
+# Enroll students in the course
+ex:Student5 ex:enrollIn ex:ITCourse2 .
+ex:Student6 ex:enrollIn ex:ITCourse2 .
+ex:Student7 ex:enrollIn ex:ITCourse2 .
+ex:Student8 ex:enrollIn ex:ITCourse2 .
+ex:Student9 ex:enrollIn ex:ITCourse2 .
+
+ex:Student10 rdf:type ex:Student ;
+    ex:studentId "SV010" ;
+    ex:studentName "Truong Van K" ;
+    ex:address "Dong Hoi, Vietnam" ;
+    ex:email "truongvank@example.com" .
+
+ex:Student11 rdf:type ex:Student ;
+    ex:studentId "SV011" ;
+    ex:studentName "Bui Ngoc L" ;
+    ex:address "Vung Tau, Vietnam" ;
+    ex:email "buingocl@example.com" .
+
+ex:Student12 rdf:type ex:Student ;
+    ex:studentId "SV012" ;
+    ex:studentName "Phan Thi M" ;
+    ex:address "Ha Long, Vietnam" ;
+    ex:email "phanthim@example.com" .
+
+ex:Student13 rdf:type ex:Student ;
+    ex:studentId "SV013" ;
+    ex:studentName "Dinh Hoang N" ;
+    ex:address "Long Xuyen, Vietnam" ;
+    ex:email "dinhhoangn@example.com" .
+
+ex:Student14 rdf:type ex:Student ;
+    ex:studentId "SV014" ;
+    ex:studentName "Le Van P" ;
+    ex:address "Bac Lieu, Vietnam" ;
+    ex:email "levanp@example.com" .
+
+ex:Student15 rdf:type ex:Student ;
+    ex:studentId "SV015" ;
+    ex:studentName "Nguyen Thuy Q" ;
+    ex:address "Rach Gia, Vietnam" ;
+    ex:email "nguyenthuyq@example.com" .
+
+# Enroll students in the course
+ex:Student10 ex:enrollIn ex:ITCourse3 .
+ex:Student11 ex:enrollIn ex:ITCourse3 .
+ex:Student12 ex:enrollIn ex:ITCourse3 .
+ex:Student13 ex:enrollIn ex:ITCourse3 .
+ex:Student14 ex:enrollIn ex:ITCourse3 .
+ex:Student15 ex:enrollIn ex:ITCourse3 .
