@@ -66,7 +66,7 @@ ex:email rdf:type owl:DatatypeProperty ;
          rdfs:range xsd:string .
 
 # Relationships
-ex:belongsToCourse rdf:type owl:ObjectProperty ;
+ex:belongToCourse rdf:type owl:ObjectProperty ;
                    rdfs:domain ex:Lesson ;
                    rdfs:range ex:Course .
 
@@ -78,6 +78,10 @@ ex:enrollIn rdf:type owl:ObjectProperty ;
             rdfs:domain ex:Student ;
             rdfs:range ex:Course .
 
-ex:attendClass rdf:type owl:ObjectProperty ;
-               rdfs:domain ex:Student ;
-               rdfs:range ex:Classroom .
+ex:attend rdf:type owl:ObjectProperty ;
+          rdfs:domain ex:Student ;
+          rdfs:range ex:Lesson .
+
+ex:belongToClass rdf:type owl:ObjectProperty ;
+                  rdfs:domain ex:Student ;
+                  rdfs:range ex:Classroom .
