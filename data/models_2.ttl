@@ -1,0 +1,147 @@
+# Exam, Minitest, Final schema
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ex: <http://example.org/ontology#> .
+
+# Define the Exam class
+ex:Exam rdf:type owl:Class ;
+    rdfs:label "Exam" ;
+    rdfs:comment "A class representing an exam." .
+
+# Properties of the Exam class
+ex:id rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:Exam ;
+    rdfs:range xsd:string ;
+    rdfs:label "id" ;
+    rdfs:comment "Identifier of the exam." .
+
+ex:name rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:Exam ;
+    rdfs:range xsd:string ;
+    rdfs:label "name" ;
+    rdfs:comment "Name of the exam." .
+
+ex:descriptionExam rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:Exam ;
+    rdfs:range xsd:string ;
+    rdfs:label "description" ;
+    rdfs:comment "Description of the exam." .
+
+ex:maxpoint rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:Exam ;
+    rdfs:range xsd:integer ;
+    rdfs:label "maxpoint" ;
+    rdfs:comment "Maximum points for the exam." .
+
+ex:time_limit rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:Exam ;
+    rdfs:range xsd:integer ;
+    rdfs:label "time_limit" ;
+    rdfs:comment "Time limit for the exam in minutes." .
+
+# Define the Minitest class
+ex:Minitest rdf:type owl:Class ;
+    rdfs:label "Minitest" ;
+    rdfs:comment "A class representing a mini test." ;
+    rdfs:subClassOf ex:Exam .
+
+# Properties of the Minitest class
+ex:studentNameMinitest rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:Minitest ;
+    rdfs:range xsd:string ;
+    rdfs:label "studentName" ;
+    rdfs:comment "Name of the student who took the mini test." .
+
+ex:markMinitest rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:Minitest ;
+    rdfs:range xsd:integer ;
+    rdfs:label "mark" ;
+    rdfs:comment "Mark obtained in the mini test." .
+
+# Define the Final class
+ex:Final rdf:type owl:Class ;
+    rdfs:label "Final" ;
+    rdfs:comment "A class representing a final exam." ;
+    rdfs:subClassOf ex:Exam .
+
+# Properties of the Final class
+ex:studentNameFinal rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:Final ;
+    rdfs:range xsd:string ;
+    rdfs:label "studentName" ;
+    rdfs:comment "Name of the student who took the final exam." .
+
+ex:markFinal rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:Final ;
+    rdfs:range xsd:integer ;
+    rdfs:label "mark" ;
+    rdfs:comment "Mark obtained in the final exam." .
+
+# Define the Question class
+ex:Question rdf:type owl:Class ;
+    rdfs:label "Question" ;
+    rdfs:comment "A class representing a question." .
+
+# Properties of the Question class
+ex:idQuestion rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:Question ;
+    rdfs:range xsd:string ;
+    rdfs:label "id" ;
+    rdfs:comment "Identifier of the question." .
+
+ex:nameQuestion rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:Question ;
+    rdfs:range xsd:string ;
+    rdfs:label "name" ;
+    rdfs:comment "Name of the question." .
+
+ex:type rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:Question ;
+    rdfs:range xsd:string ;
+    rdfs:label "type" ;
+    rdfs:comment "Type of the question." .
+
+ex:point rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:Question ;
+    rdfs:range xsd:integer ;
+    rdfs:label "point" ;
+    rdfs:comment "Point value for the question." .
+
+ex:correct_answer rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:Question ;
+    rdfs:range xsd:string ;
+    rdfs:label "correct_answer" ;
+    rdfs:comment "Correct answer for the question." .
+
+ex:list_answer rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:Question ;
+    rdfs:range xsd:string ;
+    rdfs:label "list_answer" ;
+    rdfs:comment "List of possible answers for the question." .
+
+# Relationships between existing classes
+ex:studentTakesExam rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:Student ;
+    rdfs:range ex:Exam ;
+    rdfs:label "studentTakesExam" ;
+    rdfs:comment "The exam taken by the student." .
+
+ex:studentTakesMinitest rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:Student ;
+    rdfs:range ex:Minitest ;
+    rdfs:label "studentTakesExam" ;
+    rdfs:comment "The exam taken by the student." .
+
+ex:hasFinal rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:Course ;
+    rdfs:range ex:Final ;
+    rdfs:label "hasFinal" ;
+    rdfs:comment "The final exam associated with the course." .
+
+ex:hasMiniTest rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:Lesson ;
+    rdfs:range ex:Minitest ;
+    rdfs:label "hasMiniTest" ;
+    rdfs:comment "The mini test associated with the lesson." .

@@ -1,0 +1,61 @@
+# sample data 2
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ex: <http://example.org/ontology#> .
+
+# Existing data from previous examples...
+
+# Sample data for student enrollment, class attendance, and lesson association
+ex:Student1 ex:enrollIn ex:Course1 .
+ex:Student1 ex:attendClass ex:Class1 .
+ex:Student1 ex:hasMiniTest ex:Minitest1 .
+
+ex:Student2 rdf:type ex:Student ;
+    ex:idStudent "S2" ;
+    ex:nameStudent "Bob" ;
+    ex:address "456 Oak St" ;
+    ex:email "bob@example.com" ;
+    ex:enrollIn ex:Course1 ;
+    ex:attendClass ex:Class1 ;
+    ex:hasMiniTest ex:Minitest1 .
+
+ex:Student3 rdf:type ex:Student ;
+    ex:idStudent "S3" ;
+    ex:nameStudent "Charlie" ;
+    ex:address "789 Pine St" ;
+    ex:email "charlie@example.com" ;
+    ex:enrollIn ex:Course1 ;
+    ex:attendClass ex:Class1 ;
+    ex:hasMiniTest ex:Minitest1 .
+
+ex:Student4 rdf:type ex:Student ;
+    ex:idStudent "S4" ;
+    ex:nameStudent "David" ;
+    ex:address "101 Elm St" ;
+    ex:email "david@example.com" ;
+    ex:enrollIn ex:Course2 ;
+    ex:attendClass ex:Class2 ;
+    ex:hasMiniTest ex:Minitest1 .
+
+# Additional data for courses, classes, and lessons
+ex:Course2 rdf:type ex:Course ;
+    ex:id "C2" ;
+    ex:name "Advanced Programming" ;
+    ex:description "An advanced course on programming." ;
+    ex:duration 16 .
+
+ex:Lesson2 rdf:type ex:Lesson ;
+    ex:id "L2" ;
+    ex:name "Data Structures" ;
+    ex:chapter 2 ;
+    ex:descriptionLesson "Introduction to data structures." ;
+    ex:belongsToCourse ex:Course2 .
+
+ex:Class2 rdf:type ex:Class ;
+    ex:id "CL2" ;
+    ex:nameClass "CS201" ;
+    ex:descriptionClass "Advanced programming class." ;
+    ex:semester "Spring2024" ;
+    ex:hasClass ex:Course2 .

@@ -20,7 +20,7 @@ WHERE {
 sparql.setQuery(query)
 
 # Set the query method (GET or POST)
-sparql.setMethod("GET")  # or "POST"
+# sparql.setMethod("GET")  # or "POST"
 
 # Set the query format (JSON, XML, etc.)
 sparql.setReturnFormat(JSON)

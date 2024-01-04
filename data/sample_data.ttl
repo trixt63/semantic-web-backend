@@ -1,0 +1,104 @@
+# sample data
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ex: <http://example.org/ontology#> .
+
+# Sample data for the Course class
+ex:Course1 rdf:type ex:Course ;
+    ex:id "C1" ;
+    ex:name "Introduction to Computer Science" ;
+    ex:description "An introductory course on computer science." ;
+    ex:duration 20 .
+
+ex:Course2 rdf:type ex:Course ;
+    ex:id "C1" ;
+    ex:name "Semantic Web" ;
+    ex:description "Semantic Web & Applications" ;
+    ex:duration 20 .
+
+# Sample data for the Lesson class
+ex:Lesson1 rdf:type ex:Lesson ;
+    ex:id "L1" ;
+    ex:name "Programming Fundamentals" ;
+    ex:chapter 1 ;
+    ex:descriptionLesson "Introduction to programming concepts." ;
+    ex:belongsToCourse ex:Course1 .
+
+# Sample data for the Class class
+ex:Class1 rdf:type ex:Class ;
+    ex:id "CL1" ;
+    ex:nameClass "CS101" ;
+    ex:descriptionClass "Basic programming class." ;
+    ex:semester "Fall2023" ;
+    ex:hasClass ex:Course1 .
+
+# Sample data for the Student class
+ex:Student1 rdf:type ex:Student ;
+    ex:idStudent "S1" ;
+    ex:nameStudent "Alice" ;
+    ex:address "123 Main St" ;
+    ex:email "alice@example.com" .
+
+# Sample data for the Exam class
+ex:Exam1 rdf:type ex:Exam ;
+    ex:id "E1" ;
+    ex:name "Midterm Exam" ;
+    ex:descriptionExam "Midterm examination for Introduction to Computer Science" ;
+    ex:maxpoint 100 ;
+    ex:time_limit 90 .
+
+# Sample data for the Minitest class
+ex:Minitest1 rdf:type ex:Minitest ;
+    ex:id "MT1" ;
+    ex:name "MiniTest 1" ;
+    ex:descriptionExam "First mini test on programming fundamentals" ;
+    ex:maxpoint 20 ;
+    ex:time_limit 30 ;
+    ex:studentNameMinitest "Alice" ;
+    ex:markMinitest 18 .
+
+# Sample data for the Final class
+ex:Final1 rdf:type ex:Final ;
+    ex:id "F1" ;
+    ex:name "Final Exam" ;
+    ex:descriptionExam "Final examination for Introduction to Computer Science" ;
+    ex:maxpoint 150 ;
+    ex:time_limit 120 ;
+    ex:studentNameFinal "Alice" ;
+    ex:markFinal 140 .
+
+# Sample data for the Question class
+ex:Question1 rdf:type ex:Question ;
+    ex:idQuestion "Q1" ;
+    ex:nameQuestion "What is a variable?" ;
+    ex:type "Multiple Choice" ;
+    ex:point 10 ;
+    ex:correct_answer "A storage location identified by a memory address" ;
+    ex:list_answer "A. A keyword in programming; B. A data type; C. A storage location identified by a memory address; D. None of the above" .
+
+# Relationships
+ex:studentTakesExam1 rdf:type ex:StudentExam ;
+    ex:studentTakesExam ex:Student1 ;
+    ex:studentName "Alice" ;
+    ex:attendClass ex:Class1 ;
+    ex:hasExam ex:Exam1 .
+
+ex:hasMiniTest1 rdf:type ex:MiniTestAttempt ;
+    ex:hasMiniTest ex:Lesson1 ;
+    ex:studentTakesMiniTest ex:Student1 ;
+    ex:studentName "Alice" ;
+    ex:markMinitest 18 .
+
+ex:hasFinal1 rdf:type ex:FinalAttempt ;
+    ex:hasFinal ex:Course1 ;
+    ex:studentTakesFinal ex:Student1 ;
+    ex:studentName "Alice" ;
+    ex:markFinal 140 .
+
+ex:hasQuestion1 rdf:type ex:QuestionAttempt ;
+    ex:hasQuestion ex:Exam1 ;
+    ex:studentTakesQuestion ex:Student1 ;
+    ex:questionId "Q1" ;
+    ex:answer "C. A storage location identified by a memory address" .

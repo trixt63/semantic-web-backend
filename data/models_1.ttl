@@ -1,0 +1,159 @@
+# Models for Course, Lesson, Class, Student
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ex: <http://example.org/ontology#> .
+
+# Define the Course class
+ex:Course rdf:type owl:Class ;
+    rdfs:label "Course" ;
+    rdfs:comment "A class representing a course." .
+
+# Properties of the Course class
+ex:id rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:Course ;
+    rdfs:range xsd:string ;
+    rdfs:label "id" ;
+    rdfs:comment "Identifier of the course." .
+
+ex:name rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:Course ;
+    rdfs:range xsd:string ;
+    rdfs:label "name" ;
+    rdfs:comment "Name of the course." .
+
+ex:description rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:Course ;
+    rdfs:range xsd:string ;
+    rdfs:label "description" ;
+    rdfs:comment "Description of the course." .
+
+ex:duration rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:Course ;
+    rdfs:range xsd:integer ;
+    rdfs:label "duration" ;
+    rdfs:comment "Duration of the course in weeks." .
+
+
+# Define the Lesson class
+ex:Lesson rdf:type owl:Class ;
+    rdfs:label "Lesson" ;
+    rdfs:comment "A class representing a lesson." .
+
+# Properties of the Lesson class
+ex:id rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:Lesson ;
+    rdfs:range xsd:string ;
+    rdfs:label "id" ;
+    rdfs:comment "Identifier of the lesson." .
+
+ex:name rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:Lesson ;
+    rdfs:range xsd:string ;
+    rdfs:label "name" ;
+    rdfs:comment "Name of the lesson." .
+
+ex:chapter rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:Lesson ;
+    rdfs:range xsd:integer ;
+    rdfs:label "chapter" ;
+    rdfs:comment "Chapter of the lesson." .
+
+ex:descriptionLesson rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:Lesson ;
+    rdfs:range xsd:string ;
+    rdfs:label "description" ;
+    rdfs:comment "Description of the lesson." .
+
+# Define the Class class
+ex:Class rdf:type owl:Class ;
+    rdfs:label "Class" ;
+    rdfs:comment "A class representing a class of students" .
+
+# Properties of the Class class
+ex:id rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:Class ;
+    rdfs:range xsd:string ;
+    rdfs:label "id" ;
+    rdfs:comment "Identifier of the class." .
+
+ex:nameClass rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:Class ;
+    rdfs:range xsd:string ;
+    rdfs:label "name" ;
+    rdfs:comment "Name of the class." .
+
+ex:descriptionClass rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:Class ;
+    rdfs:range xsd:string ;
+    rdfs:label "description" ;
+    rdfs:comment "Description of the class." .
+
+ex:semester rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:Class ;
+    rdfs:range xsd:string ;
+    rdfs:label "semester" ;
+    rdfs:comment "The semester that the class takes place." .
+
+# Define the Student class
+ex:Student rdf:type owl:Class ;
+    rdfs:label "Student" ;
+    rdfs:comment "A class representing a student." .
+
+# Properties of the Student class
+ex:idStudent rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:Student ;
+    rdfs:range xsd:string ;
+    rdfs:label "id" ;
+    rdfs:comment "Identifier of the student." .
+
+ex:nameStudent rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:Student ;
+    rdfs:range xsd:string ;
+    rdfs:label "name" ;
+    rdfs:comment "Name of the student." .
+
+ex:address rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:Student ;
+    rdfs:range xsd:string ;
+    rdfs:label "address" ;
+    rdfs:comment "Address of the student." .
+
+ex:email rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:Student ;
+    rdfs:range xsd:string ;
+    rdfs:label "email" ;
+    rdfs:comment "Email of the student." .
+
+
+# Relationships between Entities
+ex:enrollIn rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:Student ;
+    rdfs:range ex:Course ;
+    rdfs:label "enrollIn" ;
+    rdfs:comment "The course in which the student is enrolled." .
+
+ex:attendLesson rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:Student ;
+    rdfs:range ex:Lesson ;
+    rdfs:label "attendLesson" ;
+    rdfs:comment "Student attend class" .
+
+ex:belongsToClass rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:Student ;
+    rdfs:range ex:Class ;
+    rdfs:label "belongsToClass" ;
+    rdfs:comment "Which Student belongs to which Class" .
+
+ex:belongsToCourse rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:Lesson ;
+    rdfs:range ex:Course ;
+    rdfs:label "belongsToCourse" ;
+    rdfs:comment "The course to which the lesson belongs." .
+
+ex:hasClass rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:Course ;
+    rdfs:range ex:Class ;
+    rdfs:label "hasClass" ;
+    rdfs:comment "The class associated with the course." .
