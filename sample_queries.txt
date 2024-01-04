@@ -68,3 +68,29 @@ WHERE {
            ex:address ?address ;
            ex:email ?email .
 }
+
+# 6. Courses that a Student enroll in
+SELECT ?course ?courseId ?courseName ?courseDescription ?duration
+WHERE {
+  ?student rdf:type ex:Student ;
+           ex:studentId "SV004" ;
+           ex:enrollIn ?course .
+  ?course rdf:type ex:Course ;
+          ex:courseId ?courseId ;
+          ex:courseName ?courseName .
+  OPTIONAL { ?course ex:courseDescription ?courseDescription . }
+  OPTIONAL { ?course ex:duration ?duration . }
+}
+
+# 7. Classrooms that a Student in
+SELECT ?classroom ?classId ?className ?classDescription ?semester
+WHERE {
+  ?student rdf:type ex:Student ;
+           ex:studentId "SV004" ;
+           ex:belongToClass ?classroom .
+  ?classroom rdf:type ex:Classroom ;
+             ex:classId ?classId ;
+             ex:className ?className .
+  OPTIONAL { ?classroom ex:classDescription ?classDescription . }
+  OPTIONAL { ?classroom ex:semester ?semester . }
+}
