@@ -4,13 +4,15 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix ex: <http://example.org/ontology#> .
 
+
 # Sample IT Course 1
 ex:ITCourse1 rdf:type ex:Course ;
     ex:courseId "ITC001" ;
     ex:courseName "Introduction to Programming" ;
     ex:courseDescription "A foundational course introducing programming concepts and logic." ;
     ex:duration 10 ;
-    ex:gender "Mixed" .
+    ex:gender "Mixed" ;
+    ex:hasClass ex:Classroom1, ex:Classroom2 .
 
 # Sample IT Course 2
 ex:ITCourse2 rdf:type ex:Course ;
@@ -18,7 +20,8 @@ ex:ITCourse2 rdf:type ex:Course ;
     ex:courseName "Database Management Systems" ;
     ex:courseDescription "Explore the principles and practices of managing databases." ;
     ex:duration 12 ;
-    ex:gender "Mixed" .
+    ex:gender "Mixed" ;
+    ex:hasClass ex:Classroom3, ex:Classroom4 .
 
 # Sample IT Course 3
 ex:ITCourse3 rdf:type ex:Course ;
@@ -26,4 +29,5 @@ ex:ITCourse3 rdf:type ex:Course ;
     ex:courseName "Cybersecurity Fundamentals" ;
     ex:courseDescription "An introductory course covering the basics of cybersecurity." ;
     ex:duration 8 ;
-    ex:gender "Mixed" .
+    ex:gender "Mixed" ;
+    ex:hasClass ex:Classroom5 .

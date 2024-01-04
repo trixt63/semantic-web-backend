@@ -1,6 +1,5 @@
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX ex: <http://example.org/ontology#>
-
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -8,7 +7,7 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX ex: <http://example.org/ontology#>
 
 
-# get all courses
+# 1. get all courses
 SELECT ?course ?courseId ?courseName ?courseDescription ?duration
 WHERE {
   ?course rdf:type ex:Course .
@@ -18,8 +17,7 @@ WHERE {
   OPTIONAL { ?course ex:duration ?duration . }
 }
 
-
-# get all lessons
+# 2. get all Lessons with courseId "ITC001"
 SELECT ?lesson ?lessonId ?lessonName ?chapter ?lessonDescription
 WHERE {
   ?course rdf:type ex:Course ;
@@ -30,4 +28,43 @@ WHERE {
           ex:lessonName ?lessonName ;
           ex:chapter ?chapter .
   OPTIONAL { ?lesson ex:lessonDescription ?lessonDescription . }
+}
+
+# 3. get all Classrooms with courseId "ITC001"
+SELECT ?classroom ?classId ?className ?classDescription ?semester
+WHERE {
+  ?course rdf:type ex:Course ;
+          ex:courseId "ITC001" .
+  ?classroom rdf:type ex:Classroom ;
+             ex:hasClass ?course ;
+             ex:classId ?classId ;
+             ex:className ?className ;
+             ex:classDescription ?classDescription ;
+             ex:semester ?semester .
+}
+
+# 4. Get all Students that attend a Lesson:
+SELECT ?student ?studentId ?studentName ?address ?email
+WHERE {
+  ?lesson rdf:type ex:Lesson ;
+          ex:lessonId "L001_ITC001" .
+  ?student rdf:type ex:Student ;
+           ex:attend ?lesson ;
+           ex:studentId ?studentId ;
+           ex:studentName ?studentName ;
+           ex:address ?address ;
+           ex:email ?email .
+}
+
+# 5. Get all students in a classroom
+SELECT ?student ?studentId ?studentName ?address ?email
+WHERE {
+  ?classroom rdf:type ex:Classroom ;
+             ex:classId "C001" .
+  ?student rdf:type ex:Student ;
+           ex:belongToClass ?classroom ;
+           ex:studentId ?studentId ;
+           ex:studentName ?studentName ;
+           ex:address ?address ;
+           ex:email ?email .
 }

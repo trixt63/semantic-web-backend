@@ -1,0 +1,41 @@
+# Exam, MiniExam, FinalExam, Question
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ex: <http://example.org/ontology#> .
+
+# Class 1
+ex:Classroom1 rdf:type ex:Classroom ;
+    ex:classId "C001" ;
+    ex:className "Class A" ;
+    ex:classDescription "Classroom for beginners" ;
+    ex:semester "Spring 2024" .
+
+# Class 2
+ex:Classroom2 rdf:type ex:Classroom ;
+    ex:classId "C002" ;
+    ex:className "Class B" ;
+    ex:classDescription "Classroom for intermediate students" ;
+    ex:semester "Spring 2024" .
+
+# Class 3
+ex:Classroom3 rdf:type ex:Classroom ;
+    ex:classId "C003" ;
+    ex:className "Class C" ;
+    ex:classDescription "Classroom for advanced students" ;
+    ex:semester "Spring 2024" .
+
+# Class 4
+ex:Classroom4 rdf:type ex:Classroom ;
+    ex:classId "C004" ;
+    ex:className "Class D" ;
+    ex:classDescription "Classroom for specialized topics" ;
+    ex:semester "Spring 2024" .
+
+# Class 5
+ex:Classroom5 rdf:type ex:Classroom ;
+    ex:classId "C005" ;
+    ex:className "Class E" ;
+    ex:classDescription "Classroom for practical applications" ;
+    ex:semester "Spring 2024" .

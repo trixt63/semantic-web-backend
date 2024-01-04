@@ -1,0 +1,66 @@
+# Exam, MiniExam, FinalExam, Question
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ex: <http://example.org/ontology#> .
+
+# Student1 attends Lesson1_ITC001 and belongs to Class1
+ex:Student1 ex:attend ex:Lesson1_ITC001 .
+ex:Student1 ex:belongToClass ex:Classroom1 .
+
+# Student2 attends Lesson2_ITC001 and belongs to Class1
+ex:Student2 ex:attend ex:Lesson2_ITC001 .
+ex:Student2 ex:belongToClass ex:Classroom1 .
+
+# Student3 attends Lesson3_ITC001 and belongs to Class2
+ex:Student3 ex:attend ex:Lesson3_ITC001 .
+ex:Student3 ex:belongToClass ex:Classroom2 .
+
+# Student4 attends Lesson4_ITC001 and belongs to Class2
+ex:Student4 ex:attend ex:Lesson4_ITC001 .
+ex:Student4 ex:belongToClass ex:Classroom2 .
+
+# Student5 attends Lesson1_ITC002 and belongs to Class3
+ex:Student5 ex:attend ex:Lesson1_ITC002 .
+ex:Student5 ex:belongToClass ex:Classroom3 .
+
+# Student6 attends Lesson2_ITC002 and belongs to Class3
+ex:Student6 ex:attend ex:Lesson2_ITC002 .
+ex:Student6 ex:belongToClass ex:Classroom3 .
+
+# Student7 attends Lesson3_ITC002 and belongs to Class4
+ex:Student7 ex:attend ex:Lesson3_ITC002 .
+ex:Student7 ex:belongToClass ex:Classroom4 .
+
+# Student8 attends Lesson4_ITC002 and belongs to Class4
+ex:Student8 ex:attend ex:Lesson4_ITC002 .
+ex:Student8 ex:belongToClass ex:Classroom4 .
+
+# Student9 attends Lesson1_ITC003 and belongs to Class5
+ex:Student9 ex:attend ex:Lesson1_ITC003 .
+ex:Student9 ex:belongToClass ex:Classroom5 .
+
+# Student10 attends Lesson2_ITC003 and belongs to Class5
+ex:Student10 ex:attend ex:Lesson2_ITC003 .
+ex:Student10 ex:belongToClass ex:Classroom5 .
+
+# Student11 attends Lesson3_ITC003 and belongs to Class1
+ex:Student11 ex:attend ex:Lesson3_ITC003 .
+ex:Student11 ex:belongToClass ex:Classroom1 .
+
+# Student12 attends Lesson4_ITC003 and belongs to Class1
+ex:Student12 ex:attend ex:Lesson4_ITC003 .
+ex:Student12 ex:belongToClass ex:Classroom1 .
+
+# Student13 attends Lesson1_ITC003 and belongs to Class2
+ex:Student13 ex:attend ex:Lesson1_ITC003 .
+ex:Student13 ex:belongToClass ex:Classroom2 .
+
+# Student14 attends Lesson2_ITC003 and belongs to Class2
+ex:Student14 ex:attend ex:Lesson2_ITC003 .
+ex:Student14 ex:belongToClass ex:Classroom2 .
+
+# Student15 attends Lesson3_ITC003 and belongs to Class3
+ex:Student15 ex:attend ex:Lesson3_ITC003 .
+ex:Student15 ex:belongToClass ex:Classroom3 .

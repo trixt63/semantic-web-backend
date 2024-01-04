@@ -71,8 +71,8 @@ ex:belongToCourse rdf:type owl:ObjectProperty ;
                    rdfs:range ex:Course .
 
 ex:hasClass rdf:type owl:ObjectProperty ;
-            rdfs:domain ex:Classroom ;
-            rdfs:range ex:Course .
+            rdfs:domain ex:Course ;
+            rdfs:range ex:Classroom .
 
 ex:enrollIn rdf:type owl:ObjectProperty ;
             rdfs:domain ex:Student ;
