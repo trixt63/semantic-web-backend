@@ -26,13 +26,13 @@ ex:Lesson1 rdf:type ex:Lesson ;
     ex:descriptionLesson "Introduction to programming concepts." ;
     ex:belongsToCourse ex:Course1 .
 
-# Sample data for the Class class
-ex:Class1 rdf:type ex:Class ;
+# Sample data for the Classroom class
+ex:Classroom1 rdf:type ex:Classroom ;
     ex:id "CL1" ;
-    ex:nameClass "CS101" ;
-    ex:descriptionClass "Basic programming class." ;
+    ex:nameClassroom "CS101" ;
+    ex:descriptionClassroom "Basic programming class." ;
     ex:semester "Fall2023" ;
-    ex:hasClass ex:Course1 .
+    ex:hasClassroom ex:Course1 .
 
 # Sample data for the Student class
 ex:Student1 rdf:type ex:Student ;
@@ -82,7 +82,7 @@ ex:Question1 rdf:type ex:Question ;
 ex:studentTakesExam1 rdf:type ex:StudentExam ;
     ex:studentTakesExam ex:Student1 ;
     ex:studentName "Alice" ;
-    ex:attendClass ex:Class1 ;
+    ex:attendClassroom ex:Classroom1 ;
     ex:hasExam ex:Exam1 .
 
 ex:hasMiniTest1 rdf:type ex:MiniTestAttempt ;

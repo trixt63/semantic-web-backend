@@ -9,7 +9,7 @@
 
 # Sample data for student enrollment, class attendance, and lesson association
 ex:Student1 ex:enrollIn ex:Course1 .
-ex:Student1 ex:attendClass ex:Class1 .
+ex:Student1 ex:attendClassroom ex:Classroom1 .
 ex:Student1 ex:hasMiniTest ex:Minitest1 .
 
 ex:Student2 rdf:type ex:Student ;
@@ -18,7 +18,7 @@ ex:Student2 rdf:type ex:Student ;
     ex:address "456 Oak St" ;
     ex:email "bob@example.com" ;
     ex:enrollIn ex:Course1 ;
-    ex:attendClass ex:Class1 ;
+    ex:attendClassroom ex:Classroom1 ;
     ex:hasMiniTest ex:Minitest1 .
 
 ex:Student3 rdf:type ex:Student ;
@@ -27,7 +27,7 @@ ex:Student3 rdf:type ex:Student ;
     ex:address "789 Pine St" ;
     ex:email "charlie@example.com" ;
     ex:enrollIn ex:Course1 ;
-    ex:attendClass ex:Class1 ;
+    ex:attendClassroom ex:Classroom1 ;
     ex:hasMiniTest ex:Minitest1 .
 
 ex:Student4 rdf:type ex:Student ;
@@ -36,7 +36,7 @@ ex:Student4 rdf:type ex:Student ;
     ex:address "101 Elm St" ;
     ex:email "david@example.com" ;
     ex:enrollIn ex:Course2 ;
-    ex:attendClass ex:Class2 ;
+    ex:attendClassroom ex:Classroom2 ;
     ex:hasMiniTest ex:Minitest1 .
 
 # Additional data for courses, classes, and lessons
@@ -53,9 +53,9 @@ ex:Lesson2 rdf:type ex:Lesson ;
     ex:descriptionLesson "Introduction to data structures." ;
     ex:belongsToCourse ex:Course2 .
 
-ex:Class2 rdf:type ex:Class ;
+ex:Classroom2 rdf:type ex:Classroom ;
     ex:id "CL2" ;
-    ex:nameClass "CS201" ;
-    ex:descriptionClass "Advanced programming class." ;
+    ex:nameClassroom "CS201" ;
+    ex:descriptionClassroom "Advanced programming class." ;
     ex:semester "Spring2024" ;
-    ex:hasClass ex:Course2 .
+    ex:hasClassroom ex:Course2 .

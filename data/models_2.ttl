@@ -6,7 +6,7 @@
 @prefix ex: <http://example.org/ontology#> .
 
 # Define the Exam class
-ex:Exam rdf:type owl:Class ;
+ex:Exam rdf:type owl:Classroom ;
     rdfs:label "Exam" ;
     rdfs:comment "A class representing an exam." .
 
@@ -42,10 +42,10 @@ ex:time_limit rdf:type owl:DatatypeProperty ;
     rdfs:comment "Time limit for the exam in minutes." .
 
 # Define the Minitest class
-ex:Minitest rdf:type owl:Class ;
+ex:Minitest rdf:type owl:Classroom ;
     rdfs:label "Minitest" ;
     rdfs:comment "A class representing a mini test." ;
-    rdfs:subClassOf ex:Exam .
+    rdfs:subClassroomOf ex:Exam .
 
 # Properties of the Minitest class
 ex:studentNameMinitest rdf:type owl:DatatypeProperty ;
@@ -61,10 +61,10 @@ ex:markMinitest rdf:type owl:DatatypeProperty ;
     rdfs:comment "Mark obtained in the mini test." .
 
 # Define the Final class
-ex:Final rdf:type owl:Class ;
+ex:Final rdf:type owl:Classroom ;
     rdfs:label "Final" ;
     rdfs:comment "A class representing a final exam." ;
-    rdfs:subClassOf ex:Exam .
+    rdfs:subClassroomOf ex:Exam .
 
 # Properties of the Final class
 ex:studentNameFinal rdf:type owl:DatatypeProperty ;
@@ -80,7 +80,7 @@ ex:markFinal rdf:type owl:DatatypeProperty ;
     rdfs:comment "Mark obtained in the final exam." .
 
 # Define the Question class
-ex:Question rdf:type owl:Class ;
+ex:Question rdf:type owl:Classroom ;
     rdfs:label "Question" ;
     rdfs:comment "A class representing a question." .
 
