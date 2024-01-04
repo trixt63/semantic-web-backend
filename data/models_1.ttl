@@ -5,7 +5,6 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix ex: <http://example.org/ontology#> .
 
-
 # Course class
 ex:Course rdf:type owl:Class .
 ex:courseId rdf:type owl:DatatypeProperty ;
