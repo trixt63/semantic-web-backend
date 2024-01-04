@@ -34,9 +34,9 @@ WHERE {
 SELECT ?classroom ?classId ?className ?classDescription ?semester
 WHERE {
   ?course rdf:type ex:Course ;
+          ex:hasClass ?classroom ;
           ex:courseId "ITC001" .
   ?classroom rdf:type ex:Classroom ;
-             ex:hasClass ?course ;
              ex:classId ?classId ;
              ex:className ?className ;
              ex:classDescription ?classDescription ;
